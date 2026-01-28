@@ -41,7 +41,7 @@ I moved beyond standard reporting to build custom visual logic that answers spec
 
 #### Backend Data Model
 *The dashboard is powered by a robust Star Schema ensuring data integrity and query performance.*
-![Data Model](assets/data_model.png)
+![Data Model](assets/Model.png)
 
 ---
 
