@@ -1,52 +1,72 @@
 # Strategic Sales & RFM Dashboard 📊
 
-### Executive Summary
-This project is a Sales Intelligence Dashboard built to transform raw sales data into actionable business strategy. It utilizes a **Star Schema** data model and advanced visualization logic to drive decision-making for three key stakeholders: Executives, Operations, and Marketing.
+## Project Overview
+This project analyzes sales performance and customer behavior to help
+business stakeholders understand revenue trends, identify high-value
+customers, and detect operational inefficiencies.
+
+The dashboard supports decision-making across executives, operations,
+and marketing teams.
 
 ---
 
-### 🚀 Dashboard Showcase
+## Key Insights
+- A small percentage of customers generate a large share of total revenue.
+- High-value customers with declining recency indicate churn risk.
+- Certain regions and shipping modes consistently reduce profitability.
 
-#### 1. Executive View (Financial Health)
-*Focus: Real-time financial health monitoring with Year-over-Year (YoY) growth acceleration metrics.*
+---
+
+## Business Context
+This Sales Intelligence Dashboard transforms raw sales data into
+actionable insights using a Star Schema data model and advanced visual
+logic. It is designed to serve three key stakeholder groups: Executives,
+Operations, and Marketing.
+
+---
+
+## 🚀 Dashboard Showcase
+
+### 1. Executive View (Financial Health)
+*Focus: Monitoring revenue performance and Year-over-Year (YoY) growth.*
 ![Executive Dashboard](assets/Executive.gif)
 
-#### 2. Operations View (Efficiency & Profit)
-*Focus: Optimizing logistics and identifying "Profit Leaks" using diverging color logic.*
+### 2. Operations View (Efficiency & Profit)
+*Focus: Identifying operational inefficiencies and profit leaks.*
 ![Operations Dashboard](assets/Operations.gif)
 
-#### 3. Customer View (RFM & Retention)
-*Focus: "Whale Hunting." identifying high-value customers at risk of churn using a custom Scatter Plot radar.*
+### 3. Customer View (RFM & Retention)
+*Focus: Identifying high-value customers at risk of churn using RFM analysis.*
 ![Customer Dashboard](assets/Customers.gif)
 
 ---
 
-### 🧠 The Strategy (V2.0 Logic)
-I moved beyond standard reporting to build custom visual logic that answers specific business questions:
+## 🧠 Analytical & Visual Strategy
 
-| Feature | The Strategic Logic |
+| Feature | Logic |
 | :--- | :--- |
-| **Profit Analysis** | **Diverging Logic Map** (Red/Teal) instantly isolates unprofitable regions. |
-| **Customer Churn** | **"Whale Radar" (Scatter Plot)** plots Recency vs. Lifetime Value to identify "Lost Whales" (High Spend, High Recency). |
-| **Efficiency** | **Volume vs. Speed** combo chart identifies bottlenecks in shipping modes. |
-| **UX Design** | **Strict Grid System** with an "F-Pattern" layout for optimal cognitive load management. |
+| Profit Analysis | Diverging color logic highlights unprofitable regions. |
+| Customer Retention | Recency vs. Lifetime Value scatter plot identifies churn risk. |
+| Operational Efficiency | Volume vs. delivery speed analysis detects bottlenecks. |
+| Dashboard Design | Structured layout to improve readability and insight discovery. |
 
 ---
 
-### 🛠️ Technical Stack
-* **Data Modeling:** Power Pivot (Star Schema) connecting Fact Tables (Sales) to Dimensions (Customers, Products, Locations).
-* **ETL:** Power Query used for data cleaning and transformation.
-* **DAX:** Custom measures for `Churn Risk`, `Average Shipping Days`, and `Active Customer Count`.
-* **Visual Engineering:** Conditional formatting, custom number formats, and non-standard chart types.
+## 🛠️ Technical Stack
+- **Data Modeling:** Star Schema using fact and dimension tables.
+- **ETL:** Power Query for data cleaning and transformation.
+- **DAX:** Measures for churn risk, shipping performance, and customer metrics.
+- **Visualization:** Power BI dashboards with conditional formatting and custom visuals.
 
-#### Backend Data Model
-*The dashboard is powered by a robust Star Schema ensuring data integrity and query performance.*
+### Backend Data Model
 ![Data Model](assets/Model.png)
 
 ---
 
-### 🔄 Data Source
-* **Dataset:** Superstore Sales Data (2015-2018).
-* **Volume:** ~10,000 Records.
+## 🔄 Data Source
+- **Dataset:** Superstore Sales Data (2015–2018)
+- **Volume:** ~10,000 records
+
+---
 
 *Author: Saleh Hossam*
